@@ -12,7 +12,7 @@ Before doing anything else:
 
 Model policy:
 - If using OpenAI, use gpt-5.4 with high reasoning.
-- If using Anthropic, use Claude Opus 4.1 if available, otherwise Claude Opus 4.
+- If using Anthropic, use Claude Opus 4.6 if available, otherwise Claude Sonnet 4.6.
 
 Important rules:
 - Do not change application logic.
