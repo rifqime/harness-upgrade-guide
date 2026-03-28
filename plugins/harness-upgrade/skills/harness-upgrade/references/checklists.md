@@ -1,8 +1,25 @@
-# Review Checklist
+# Pilot And Review Checklists
 
-Use this to review the outputs of the two-pass harness workflow.
+## Pilot Readiness
 
-## Pass 1
+Use the workflow first on repositories that are:
+
+- legacy, under-documented, or hard to onboard into
+- stable enough to observe current behavior
+- not in the middle of an incident or major migration
+- owned by someone available to answer Pass 1 questions
+
+Before Pass 2 begins, confirm:
+
+- one clear repo owner is available
+- one reviewer is assigned
+- merge and deploy authority are known
+- the team agrees the initial effort is docs-only
+- a frontier reasoning model is available if the team wants the highest-quality initial pass
+
+## Review Checklist
+
+### Pass 1
 
 - did the agent read the repo before asking questions
 - did it inspect key entrypoints, env usage, deploy files, CI, and current workflow assets
@@ -12,7 +29,7 @@ Use this to review the outputs of the two-pass harness workflow.
 - are the questions grouped clearly
 - did it avoid proposing implementation changes
 
-## Pass 2
+### Pass 2
 
 - did the agent keep the work docs-only
 - does the harness describe the system as it works today
@@ -24,7 +41,7 @@ Use this to review the outputs of the two-pass harness workflow.
 - are ownership and approval points explicit
 - are unknowns marked as pending rather than invented
 
-## Outcome Quality
+### Outcome Quality
 
 - could a new engineer navigate the repo without hidden chat context
 - could a freelance contributor follow the workflow safely

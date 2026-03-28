@@ -22,6 +22,8 @@ Important rules:
 - Only create or update docs, templates, contributor instructions, and lightweight repo workflow scaffolding.
 - If existing docs are stale or misleading, replace them with accurate versions.
 - Do not invent policies the repo owner did not approve.
+- Do not smooth over real ambiguity just to make the harness look complete.
+- Do not fall back to generic boilerplate if the repo gives you stronger evidence.
 
 Your task:
 1. Create or update the repo’s source-of-truth docs and contributor guidance.
@@ -29,6 +31,7 @@ Your task:
    - core engineers
    - external or freelance contributors
    - future AI agents
+   - operators or product-adjacent people preparing repo-aware requests
 3. Document the system as it actually works today, not as an idealized redesign.
 
 The harness must make these explicit:

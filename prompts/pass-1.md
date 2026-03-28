@@ -20,6 +20,7 @@ Important rules:
 - Do not change backend contracts, runtime behavior, deploy behavior, or environment behavior.
 - Do not create or edit harness/docs yet unless explicitly asked after clarification.
 - If the repo already contains AGENTS.md, docs, templates, or workflow checks, audit and reconcile them rather than assuming the repo is unharnessed.
+- Do not let missing context become an excuse for generic boilerplate.
 
 Your task:
 1. Read the repository structure, manifests, configs, env usage, deploy scripts, CI, key entrypoints, and contributor docs.
@@ -35,12 +36,14 @@ Your task:
 4. Identify what is already good enough.
 5. Identify what is missing, stale, contradictory, or ambiguous.
 6. Ask only the clarification questions that are necessary to create an accurate initial harness.
+7. Stop after Pass 1 if owner answers are not yet available.
 
 Do not:
 - propose code changes yet
 - create files yet
 - ask vague opinion questions
 - ask questions that can already be answered from the repository
+- propose a broad redesign instead of understanding the existing system
 
 Output format:
 - A short summary of what the repo appears to be

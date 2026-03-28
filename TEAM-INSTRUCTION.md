@@ -4,7 +4,7 @@
 
 Use this workflow to make existing repositories easier for humans and AI agents to understand and modify safely.
 
-This is a harness upgrade for existing repos. It is not a product rewrite and it is not an attempt to copy another company's full engineering model.
+This is a harness upgrade for existing repos. It is not a generic docs cleanup pass, not a product rewrite, and not an attempt to copy another company's full engineering model wholesale.
 
 ## Why We Are Doing This
 
@@ -20,6 +20,8 @@ Read the OpenAI Harness Engineering article first:
 - https://openai.com/index/harness-engineering/
 
 Read it as a reference for agent-legible repos, not as a blueprint to copy wholesale.
+
+This workflow is intentionally opinionated because generic harness guidance tends to produce generic harnesses. The goal is to help a strong model produce repo-aware issues, specs, and docs with fewer bad assumptions.
 
 ## Tooling Guidance
 
@@ -43,6 +45,7 @@ Do not switch to weaker substitute models for the initial harness pass unless th
 - keep human approval for scope, merge, and deploy
 - document reality as it exists today
 - do not invent policies the owner has not approved
+- do not let the repo look cleaner on paper than it is in reality
 
 ## Two-Pass Workflow
 
@@ -56,6 +59,7 @@ Allowed:
 - inspect current docs and workflow assets
 - identify missing, stale, or contradictory repo guidance
 - ask only the questions needed to build an accurate harness
+- compare the repo against a minimum harness baseline before asking the owner anything
 
 Not allowed:
 
@@ -63,6 +67,7 @@ Not allowed:
 - refactoring working code
 - runtime, deploy, or environment changes
 - creating harness files before clarification
+- broad redesign proposals as a substitute for understanding the repo
 
 ### Pass 2
 
@@ -86,6 +91,7 @@ Not allowed:
 - backend contract changes
 - deploy behavior changes
 - broad dependency churn unrelated to harnessing
+- inventing ownership or release policy the owner did not approve
 
 ## Definition Of Done
 
@@ -97,6 +103,7 @@ The initial harness is good enough when:
 - safe versus sensitive areas are called out
 - ownership of issue scope, PR merge, and production deploy is documented
 - an AI agent can draft a directionally correct issue, spec, or PR without guessing the wrong architecture
+- an operator or product person can prepare a more repo-aware request before it reaches engineering
 
 ## Default Deliverables
 

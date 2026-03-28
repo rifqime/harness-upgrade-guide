@@ -1,0 +1,32 @@
+{
+  "name": "harness-upgrade",
+  "version": "0.1.0",
+  "description": "Draft an initial harness-engineering layer for existing repositories.",
+  "repository": "https://github.com/rifqime/harness-upgrade-guide",
+  "homepage": "https://github.com/rifqime/harness-upgrade-guide/tree/main/plugins/harness-upgrade",
+  "keywords": [
+    "codex",
+    "harness",
+    "documentation",
+    "workflow",
+    "onboarding"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Harness Upgrade",
+    "shortDescription": "Draft an initial repository harness",
+    "longDescription": "Run a strict two-pass harness upgrade: inspect the repository, ask minimal owner questions, then draft docs-only harness guidance for review.",
+    "developerName": "rifqime",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/rifqime/harness-upgrade-guide",
+    "defaultPrompt": [
+      "Use Harness Upgrade to inspect this repository and produce a Pass 1 harness-readiness report only.",
+      "Use Harness Upgrade to reconcile owner answers and then run Pass 2 to draft docs-only harness updates for this repository."
+    ],
+    "brandColor": "#10A37F"
+  }
+}

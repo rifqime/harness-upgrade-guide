@@ -11,6 +11,8 @@ Use this repository as a playbook, not as a codebase to redesign.
 5. `prompts/owner-answer-handoff.md`
 6. `prompts/pass-2.md`
 7. `templates/review-checklist.md`
+8. `plugins/harness-upgrade/README.md`
+9. `plugins/harness-upgrade/skills/harness-upgrade/SKILL.md`
 
 ## Rules
 
@@ -19,3 +21,4 @@ Use this repository as a playbook, not as a codebase to redesign.
 - Prefer concise, reusable templates over long theory.
 - Treat the OpenAI article as reference material, not mandatory policy.
 - Keep human approval explicit for scope, merge, and deploy.
+- Keep the plugin portable: bundle the workflow guidance it needs instead of depending on private context.

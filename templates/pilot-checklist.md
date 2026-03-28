@@ -14,6 +14,7 @@ Use this before starting the first harness upgrade on a real repository.
 - one clear repo owner is available to answer Pass 1 questions
 - one reviewer is assigned to review the harness outputs
 - merge and deploy authority are known before Pass 2 begins
+- a frontier reasoning model is available if the team wants the highest-quality initial pass
 
 ## Operating Constraints
 
@@ -28,3 +29,4 @@ Use this before starting the first harness upgrade on a real repository.
 - the resulting docs reduce hidden context
 - contributors can find source-of-truth and deploy rules
 - AI agents can draft issues, specs, and PRs with fewer bad assumptions
+- the resulting harness is specific to the repo, not generic scaffolding
