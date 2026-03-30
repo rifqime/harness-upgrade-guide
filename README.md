@@ -62,6 +62,6 @@ The intended invocation is not "just generate docs." The intended flow is:
 ## Approved Model Guidance
 
 - OpenAI: `gpt-5.4` with `high` reasoning
-- Anthropic: `Claude Opus 4.1` if available, otherwise `Claude Opus 4`
+- Anthropic: `Claude Opus 4.6` if available, otherwise `Claude Opus 4`
 
 The goal is consistency and planning quality, not lowest latency.
